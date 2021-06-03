@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-
 import 'app_bar.dart';
+import 'package:qrcode_app/common/toggle_widget.dart';
 
 class PlaneTicketListPage extends StatelessWidget {
   @override
