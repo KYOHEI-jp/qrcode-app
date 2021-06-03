@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:qrcode_app/theme.dart';
 
+import 'PlaneTicketListPage.dart';
+
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -13,6 +15,6 @@ class MyApp extends StatelessWidget {
       ),
       debugShowCheckedModeBanner: false,
       home: PlaneTicketListPage(),
-    )
+    );
   }
 }

@@ -4,7 +4,7 @@ import 'package:qrcode_app/theme.dart';
 class ToggleWidget extends StatelessWidget {
   final String firstOption, secondOption;
   //コンストラクター
-  ToggleWidget({@required this.firstOption, this.secondOption});
+  ToggleWidget({required this.firstOption, required this.secondOption});
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +17,7 @@ class ToggleWidget extends StatelessWidget {
           children: <Widget>[
             CustomRadioButton(
                 text: firstOption,
-                isCrrentActive: isEqual(snapshot.data, firstOption)),
+                isCurrentActive: isEqual(snapshot.data, firstOption)),
             CustomRadioButton(
                 text: secondOption,
                 isCurrentActive: isEqual(snapshot.data, secondOption)),
@@ -36,7 +36,7 @@ class CustomRadioButton extends StatelessWidget {
   final String text;
   final bool isCurrentActive;
 
-  CustomRadioButton({@required this.text, @required this.isCurrentActive});
+  CustomRadioButton({required this.text, required this.isCurrentActive});
 
   @override
   Widget build(BuildContext context) {
