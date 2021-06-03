@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:qrcode_app/theme.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
 
   final String title;
 
-  CustomAppBar({this.title});
+  CustomAppBar({required this.title});
 
   @override
   Widget build(BuildContext context) {
